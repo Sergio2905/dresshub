@@ -170,6 +170,39 @@ body._lock {
   stroke-width: 2px;
 }
 
+.btn-green {
+  border-radius: 5px;
+  background: linear-gradient(135deg, #36BD54 0%, rgba(78, 173, 54, 0.76) 100%);
+  box-shadow: 4px 4px 16px 0px rgba(0, 0, 0, 0.1);
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Manrope", sans-serif;
+  font-weight: 800;
+  color: var(--white);
+}
+
+.btn-white {
+  border-radius: 3px;
+  border: 1px solid rgba(33, 33, 33, 0.1);
+  background: #FFF;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 10px;
+}
+
+.btn-white svg {
+  width: 16px;
+  height: 16px;
+  fill: var(--black);
+  margin-left: 8px;
+}
+
 .breadcrumbs {
   margin-bottom: 16px;
 }
@@ -1303,6 +1336,265 @@ body._lock {
   }
 }
 
+.product__body {
+  padding-bottom: 150px;
+}
+
+.product__main {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  gap: 16px;
+}
+
+.product__block {
+  border-radius: 5px;
+  background: #FFF;
+  padding: 16px;
+}
+
+.thumbs-product {
+  grid-column: span 4;
+}
+
+.thumbs-product__body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.thumbs-product__slider {
+  flex: 1 1 100%;
+  margin-right: 16px;
+  overflow: hidden;
+  height: 100%;
+  max-height: auto;
+}
+
+.thumbs-product__slide {
+  height: 300px;
+  padding: 5px;
+}
+
+.thumbs-product .swiper-slide-thumb-active .thumbs-product__item {
+  border: 1px solid #000;
+}
+
+.thumbs-product__item {
+  width: 100%;
+  aspect-ratio: 100/128;
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  transition: all 0.2s linear;
+}
+
+.thumbs-product__item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.thumbs-product__scrollbar {
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #D9D9D9;
+  border-radius: 11px;
+}
+
+.thumbs-product__scrollbar .swiper-scrollbar-drag {
+  background: #112241;
+  border-radius: 11px;
+  height: 100%;
+}
+
+.image-product {
+  grid-column: span 12;
+}
+
+.image-product__body {
+  height: 100%;
+}
+
+.image-product__slider {
+  height: 100%;
+  overflow: hidden;
+}
+
+.image-product__item {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background: url("../img/loading.gif") 50% no-repeat;
+}
+
+.image-product__item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.about-product {
+  grid-column: span 8;
+}
+
+.about-product__tabs .tabs__header {
+  display: flex;
+  border-bottom: 1px solid rgba(33, 33, 33, 0.4);
+}
+
+.about-product__tabs .tabs__item {
+  text-align: center;
+  flex: 1 1 50%;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-bottom: 2px solid transparent;
+  text-transform: uppercase;
+}
+
+.about-product__tabs .tabs__item._active {
+  color: #0024A1;
+  opacity: 1;
+  border-bottom: 2px solid #0024A1;
+}
+
+.about-product__block {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.about-product__title {
+  margin-bottom: 8px;
+}
+
+.about-product__brand {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 32px;
+}
+
+.about-product__prices {
+  display: flex;
+  align-items: center;
+}
+
+.about-product__sizes {
+  margin-bottom: 24px;
+  color: var(--blue);
+  font-weight: 500;
+}
+
+.about-product__sizes span {
+  font-size: 0.875rem;
+  color: var(--black);
+  opacity: 0.7;
+}
+
+.about-product__footer {
+  padding: 20px 0;
+}
+
+.about-product__btns {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.about-product__btn {
+  flex: 1 1 45%;
+}
+
+.about-product__shop {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  opacity: 0.7;
+  max-width: 50%;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about-product__available {
+  display: flex;
+  align-items: center;
+}
+
+.about-product__note {
+  flex: 1 1 auto;
+  border-radius: 3px;
+  border: 1px solid rgba(0, 42, 106, 0.1);
+  background: #FFF;
+  color: var(--blue);
+  font-size: 0.875rem;
+  font-weight: 500;
+  opacity: 0.7;
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  height: 35px;
+}
+
+.about-product__note svg {
+  width: 24px;
+  height: 24px;
+  fill: #DCA200;
+  margin-right: 8px;
+}
+
+.about-product__all {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 135px;
+  width: 100%;
+  height: 35px;
+}
+
+.about-product__all svg {
+  width: 16px;
+  height: 16px;
+  stroke: var(--white);
+  stroke-width: 2px;
+}
+
+.prices-product__new {
+  font-size: 1.375rem;
+  font-weight: 500;
+  color: var(--red);
+}
+
+.prices-product__old {
+  font-size: 1.125rem;
+  color: var(--black);
+  opacity: 0.5;
+  text-decoration: line-through;
+  margin-left: 5px;
+}
+
+.prices-product__label {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.75rem;
+  color: var(--white);
+  border-radius: 3px;
+  background: #D22D2D;
+  padding: 3px 6px;
+  margin-left: 16px;
+}
+
 .looks__body {
   padding-bottom: 150px;
 }
@@ -1748,7 +2040,6 @@ body._lock {
 
 .blog {
   flex: 1 1 auto;
-  padding-bottom: 150px;
 }
 
 .blog__header {
@@ -1765,6 +2056,7 @@ body._lock {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 16px;
+  padding-bottom: 150px;
 }
 
 .blog__card {
@@ -1825,10 +2117,10 @@ body._lock {
 }
 
 .card-blog__desc {
+  font-family: "Manrope", sans-serif;
   margin-bottom: 24px;
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 500;
-  opacity: 0.7;
   line-height: 1.5;
   order: 3;
   flex: 1 1 auto;
@@ -1838,7 +2130,7 @@ body._lock {
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 }
 
@@ -2094,6 +2386,10 @@ body._lock {
   opacity: 0.5;
 }
 
+.article__blog .header-blog__title {
+  margin-bottom: 0;
+}
+
 .menu-article {
   border-radius: 5px;
   border: 1px solid rgba(17, 34, 65, 0.2);
@@ -2120,6 +2416,10 @@ body._lock {
   font-weight: 500;
   color: var(--black);
   line-height: 1.5;
+}
+
+.author-article {
+  margin-bottom: 0 !important;
 }
 
 .author-article__body {
@@ -2370,7 +2670,7 @@ body._lock {
 }
 
 .contact__footer span {
-  opacity: 0.4;
+  opacity: 0.9;
 }
 
 .contact__link {
@@ -2414,8 +2714,8 @@ body._lock {
 .menu-footer__list {
   display: flex;
   flex-wrap: wrap;
-  -moz-column-gap: 80px;
-       column-gap: 80px;
+  -moz-column-gap: 50px;
+       column-gap: 50px;
 }
 
 .menu-footer__item {
@@ -2794,6 +3094,10 @@ body._lock {
     padding: 0 calc(4px + 12 * (100vw - 320px) / 1600);
   }
 
+  .product__body {
+    padding-bottom: calc(50px + 100 * (100vw - 320px) / 1600);
+  }
+
   .looks__body {
     padding-bottom: calc(50px + 100 * (100vw - 320px) / 1600);
   }
@@ -2904,6 +3208,23 @@ body._lock {
 
   .look__similar {
     font-size: calc(1rem + 4 * (100vw - 20rem) / 1600);
+  }
+
+  .blog__body {
+    padding-bottom: calc(50px + 100 * (100vw - 320px) / 1600);
+  }
+
+  .card-blog__desc {
+    font-size: calc(0.875rem + 4 * (100vw - 20rem) / 1600);
+    margin-bottom: calc(20px + 20 * (100vw - 320px) / 1600);
+  }
+
+  .author__name {
+    font-size: calc(0.75rem + 4 * (100vw - 20rem) / 1600);
+  }
+
+  .author__public {
+    font-size: calc(0.75rem + 4 * (100vw - 20rem) / 1600);
   }
 
   .article__wrapper {
@@ -3017,8 +3338,8 @@ body._lock {
   }
 
   .menu-footer__list {
-    -moz-column-gap: calc(24px + 56 * (100vw - 992px) / 928);
-         column-gap: calc(24px + 56 * (100vw - 992px) / 928);
+    -moz-column-gap: calc(10px + 40 * (100vw - 992px) / 928);
+         column-gap: calc(10px + 40 * (100vw - 992px) / 928);
   }
 
   .menu-footer__item {
@@ -3126,10 +3447,6 @@ body._lock {
     align-items: flex-start;
   }
 
-  .blog__body {
-    grid-template-columns: 1fr;
-  }
-
   .header-blog__title {
     margin-right: 0;
     margin-bottom: 16px;
@@ -3226,6 +3543,10 @@ body._lock {
 
   .brands__sidebar {
     max-width: unset;
+  }
+
+  .blog__body {
+    grid-template-columns: 1fr;
   }
 
   .author-article__main {
