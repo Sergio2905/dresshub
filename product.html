@@ -4,7 +4,7 @@
 <head>
     <title>Dresshub</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230905130030">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230905154658">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -36,8 +36,8 @@
             <div class="product__container container">
                 <div class="product__body">
                     <div class="product__main">
-                        <div class="product__block thumbs-product">
-                            <div class="thumbs-product__body">
+                        <div class="product__block thumbs-product" data-desk="thumbs, append">
+                            <div class="thumbs-product__body" data-move="thumbs, 768">
                                 <div class="thumbs-product__slider">
                                     <div class="thumbs-product__wrapper swiper-wrapper">
                                         <div class="thumbs-product__slide swiper-slide">
@@ -85,8 +85,8 @@
                                 <div class="thumbs-product__scrollbar"></div>
                             </div>
                         </div>
-                        <div class="product__block image-product">
-                            <div class="image-product__body">
+                        <div class="product__block image-product" data-desk="image, append">
+                            <div class="image-product__body" data-move="image, 768">
                                 <div class="image-product__slider">
                                     <div class="image-product__wrapper swiper-wrapper">
                                         <div class="image-product__slide swiper-slide">
@@ -151,6 +151,18 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="image-product__navigation">
+                                    <button type="button" class="image-product__prev">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#arrow"></use>
+                                        </svg>
+                                    </button>
+                                    <button type="button" class="image-product__next">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#arrow"></use>
+                                        </svg>
+                                    </button>
+                                </div>
                             </div>
                         </div>
                         <div class="product__block about-product">
@@ -163,8 +175,8 @@
 
                                     <div class="tabs__body">
                                         <div class="tabs__block _active">
-                                            <div class="tabs__content">
-                                                <div class="about-product__block">
+                                            <div class="tabs__content" data-mob="image, prepend">
+                                                <div class="about-product__block" data-mob="thumbs, before">
                                                     <h1 class="about-product__title title4">
                                                         Colmar Exquisite Indigo Denim Elegance: The Finest Handcrafted
                                                         Jeans of Unparalleled Quality and Style
@@ -183,12 +195,134 @@
                                                         <span>52</span>,
                                                         <span>54</span>, <span>56</span>
                                                     </div>
-                                                    <div class="about-product__colors">Available colors</div>
+                                                    <div class="about-product__colors colors-card">Available colors:
+                                                        <div class="colors-card__item colors-card__item_black">
+                                                            <span></span>
+                                                        </div>
+                                                        <div class="colors-card__item colors-card__item_gray">
+                                                            <span></span>
+                                                        </div>
+                                                        <div class="colors-card__item colors-card__item_white">
+                                                            <span></span>
+                                                        </div>
+                                                        <div class="colors-card__item colors-card__item_red">
+                                                            <span></span>
+                                                        </div>
+                                                        <div class="colors-card__item colors-card__item_black">
+                                                            <span></span>
+                                                        </div>
+                                                        <div class="colors-card__item colors-card__item_white">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="tabs__block">
-                                            <div class="tabs__content">2</div>
+                                            <div class="tabs__content">
+                                                <div class="about-product__block">
+                                                    <div class="about-product__desc" data-simplebar>
+                                                        <div class="about-product__text">
+                                                            THE ROW "Cheval" long coat features a foldover back
+                                                            detail
+                                                            Notched collar; single-breasted front Long sleeves;
+                                                            button
+                                                            cuffs Vertical waist darts Front welt pockets Hem falls
+                                                            below the knee Straight silhouette Virgin wool/mohair
+                                                            Lining: Silk Made in the USA.
+                                                        </div>
+                                                        <ul class="about-product__list">
+                                                            <li class="about-product__item">
+                                                                To personalize your experience on our site and to
+                                                                allow
+                                                                us
+                                                                to deliver the type of content and product offerings
+                                                                in
+                                                                which you are most interested.
+                                                            </li>
+                                                            <li class="about-product__item">
+                                                                To improve our website in order to better serve you.
+                                                            </li>
+                                                            <li class="about-product__item">
+                                                                To allow us to better service you in responding to
+                                                                your
+                                                                customer service requests.
+                                                            </li>
+                                                            <li class="about-product__item">
+                                                                To administer a contest, promotion, survey or other
+                                                                site
+                                                                feature.
+                                                            </li>
+                                                            <li class="about-product__item">
+                                                                To quickly process your transactions.
+                                                            </li>
+                                                            <li class="about-product__item">
+                                                                To send periodic emails regarding your order or
+                                                                other
+                                                                products and services.
+                                                            </li>
+                                                        </ul>
+                                                        <div class="about-product__text">
+                                                            THE ROW "Cheval" long coat features a foldover back
+                                                            detail
+                                                            Notched collar; single-breasted front Long sleeves;
+                                                            button
+                                                            cuffs Vertical waist darts Front welt pockets Hem falls
+                                                            below the knee Straight silhouette Virgin wool/mohair
+                                                            Lining: Silk Made in the USA.
+                                                        </div>
+                                                        <div class="about-product__text">
+                                                            THE ROW "Cheval" long coat features a foldover back
+                                                            detail
+                                                            Notched collar; single-breasted front Long sleeves;
+                                                            button
+                                                            cuffs Vertical waist darts Front welt pockets Hem falls
+                                                            below the knee Straight silhouette Virgin wool/mohair
+                                                            Lining: Silk Made in the USA.
+                                                        </div>
+                                                        <div class="about-product__text">
+                                                            THE ROW "Cheval" long coat features a foldover back
+                                                            detail
+                                                            Notched collar; single-breasted front Long sleeves;
+                                                            button
+                                                            cuffs Vertical waist darts Front welt pockets Hem falls
+                                                            below the knee Straight silhouette Virgin wool/mohair
+                                                            Lining: Silk Made in the USA.
+                                                        </div>
+                                                        <ul class="about-product__list">
+                                                            <li class="about-product__item">
+                                                                To personalize your experience on our site and to
+                                                                allow
+                                                                us
+                                                                to deliver the type of content and product offerings
+                                                                in
+                                                                which you are most interested.
+                                                            </li>
+                                                            <li class="about-product__item">
+                                                                To improve our website in order to better serve you.
+                                                            </li>
+                                                            <li class="about-product__item">
+                                                                To allow us to better service you in responding to
+                                                                your
+                                                                customer service requests.
+                                                            </li>
+                                                            <li class="about-product__item">
+                                                                To administer a contest, promotion, survey or other
+                                                                site
+                                                                feature.
+                                                            </li>
+                                                            <li class="about-product__item">
+                                                                To quickly process your transactions.
+                                                            </li>
+                                                            <li class="about-product__item">
+                                                                To send periodic emails regarding your order or
+                                                                other
+                                                                products and services.
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -221,8 +355,626 @@
                             </div>
                         </div>
                     </div>
-                    <div class="product__goods"></div>
-                    <div class="product__goods"></div>
+                    <div class="product__goods goods-product">
+                        <div class="goods-product__body">
+                            <h3 class="goods-product__title title3">Similar</h3>
+                            <div class="goods-product__cat catalog">
+                                <div class="catalog__item prod-card">
+                                    <div class="prod-card__labels">
+                                        <span class="prod-card__label">-20 %</span>
+                                        <button type="button" class="prod-card__favorite">
+                                            <svg>
+                                                <use href="img/icons/icons.svg#heart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a href="#" class="prod-card__image">
+                                        <picture>
+                                            <source data-srcset="img/products/image8.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/products/image8.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </a>
+                                    <div class="prod-card__details">
+                                        <a href="#" class="prod-card__name">
+                                            Colmar Side Zip Detail Quilted Jacket
+                                        </a>
+                                        <div class="prod-card__type">
+                                            Colmar
+                                        </div>
+                                        <div class="prod-card__prices prices-card">
+                                            <div class="prices-card__wrapper">
+                                                <div class="prices-card__new">$ 333.67</div>
+                                                <div class="prices-card__old">$ 412.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__item prod-card">
+                                    <div class="prod-card__labels">
+                                        <button type="button" class="prod-card__favorite">
+                                            <svg>
+                                                <use href="img/icons/icons.svg#heart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a href="#" class="prod-card__image">
+                                        <picture>
+                                            <source data-srcset="img/products/image9.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/products/image9.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </a>
+                                    <div class="prod-card__details">
+                                        <a href="#" class="prod-card__name">
+                                            Colmar Side Zip Detail Quilted Jacket
+                                        </a>
+                                        <div class="prod-card__type">
+                                            Colmar
+                                        </div>
+                                        <div class="prod-card__size">
+                                            Sizes: 50, 51, 53
+                                        </div>
+                                        <div class="prod-card__colors colors-card">
+                                            <div class="colors-card__slider">
+                                                <div class="colors-card__wrapper swiper-wrapper">
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_black">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_gray">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_white">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_black-white">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_red">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_black">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_gray">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_white">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_black-white">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_red">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="colors-card__navigation navigation">
+                                                    <button type="button" class="navigation__prev">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#arrow2-str">
+                                                            </use>
+                                                        </svg>
+                                                    </button>
+                                                    <button type="button" class="navigation__next">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#arrow2-str">
+                                                            </use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="prod-card__prices prices-card">
+                                            <div class="prices-card__wrapper">
+                                                <div class="prices-card__new">$ 333.67</div>
+                                                <div class="prices-card__old">$ 412.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__item prod-card">
+                                    <div class="prod-card__labels">
+                                        <span class="prod-card__label">-20 %</span>
+                                        <button type="button" class="prod-card__favorite">
+                                            <svg>
+                                                <use href="img/icons/icons.svg#heart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a href="#" class="prod-card__image">
+                                        <picture>
+                                            <source data-srcset="img/products/image8.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/products/image8.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </a>
+                                    <div class="prod-card__details">
+                                        <a href="#" class="prod-card__name">
+                                            Colmar Side Zip Detail Quilted Jacket
+                                        </a>
+                                        <div class="prod-card__type">
+                                            Colmar
+                                        </div>
+                                        <div class="prod-card__size">
+                                            Sizes: 50, 51, 53
+                                        </div>
+                                        <div class="prod-card__prices prices-card">
+                                            <div class="prices-card__wrapper">
+                                                <div class="prices-card__new">$ 333.67</div>
+                                                <div class="prices-card__old">$ 412.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__item prod-card">
+                                    <div class="prod-card__labels">
+                                        <span class="prod-card__label">-20 %</span>
+                                        <button type="button" class="prod-card__favorite">
+                                            <svg>
+                                                <use href="img/icons/icons.svg#heart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a href="#" class="prod-card__image">
+                                        <picture>
+                                            <source data-srcset="img/products/image9.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/products/image9.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </a>
+                                    <div class="prod-card__details">
+                                        <a href="#" class="prod-card__name">
+                                            Colmar Side Zip Detail Quilted Jacket
+                                        </a>
+                                        <div class="prod-card__type">
+                                            Colmar
+                                        </div>
+                                        <div class="prod-card__colors colors-card">
+                                            <div class="colors-card__slider">
+                                                <div class="colors-card__wrapper swiper-wrapper">
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_black">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_gray">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_white">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_black-white">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_red">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_black">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_gray">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_white">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_black-white">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_red">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="colors-card__navigation navigation">
+                                                    <button type="button" class="navigation__prev">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#arrow2-str">
+                                                            </use>
+                                                        </svg>
+                                                    </button>
+                                                    <button type="button" class="navigation__next">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#arrow2-str">
+                                                            </use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="prod-card__prices prices-card">
+                                            <div class="prices-card__wrapper">
+                                                <div class="prices-card__new">$ 333.67</div>
+                                                <div class="prices-card__old">$ 412.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__item prod-card">
+                                    <div class="prod-card__labels">
+                                        <span class="prod-card__label">-20 %</span>
+                                        <button type="button" class="prod-card__favorite">
+                                            <svg>
+                                                <use href="img/icons/icons.svg#heart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a href="#" class="prod-card__image">
+                                        <picture>
+                                            <source data-srcset="img/products/image8.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/products/image8.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </a>
+                                    <div class="prod-card__details">
+                                        <a href="#" class="prod-card__name">
+                                            Colmar Side Zip Detail Quilted Jacket
+                                        </a>
+                                        <div class="prod-card__type">
+                                            Colmar
+                                        </div>
+                                        <div class="prod-card__size">
+                                            Sizes: 50, 51, 53
+                                        </div>
+                                        <div class="prod-card__prices prices-card">
+                                            <div class="prices-card__wrapper">
+                                                <div class="prices-card__new">$ 333.67</div>
+                                                <div class="prices-card__old">$ 412.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product__goods goods-product">
+                        <div class="goods-product__body">
+                            <h3 class="goods-product__title title3">Related</h3>
+                            <div class="goods-product__cat catalog">
+                                <div class="catalog__item prod-card">
+                                    <div class="prod-card__labels">
+                                        <span class="prod-card__label">-20 %</span>
+                                        <button type="button" class="prod-card__favorite">
+                                            <svg>
+                                                <use href="img/icons/icons.svg#heart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a href="#" class="prod-card__image">
+                                        <picture>
+                                            <source data-srcset="img/products/image8.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/products/image8.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </a>
+                                    <div class="prod-card__details">
+                                        <a href="#" class="prod-card__name">
+                                            Colmar Side Zip Detail Quilted Jacket
+                                        </a>
+                                        <div class="prod-card__type">
+                                            Colmar
+                                        </div>
+                                        <div class="prod-card__prices prices-card">
+                                            <div class="prices-card__wrapper">
+                                                <div class="prices-card__new">$ 333.67</div>
+                                                <div class="prices-card__old">$ 412.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__item prod-card">
+                                    <div class="prod-card__labels">
+                                        <button type="button" class="prod-card__favorite">
+                                            <svg>
+                                                <use href="img/icons/icons.svg#heart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a href="#" class="prod-card__image">
+                                        <picture>
+                                            <source data-srcset="img/products/image9.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/products/image9.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </a>
+                                    <div class="prod-card__details">
+                                        <a href="#" class="prod-card__name">
+                                            Colmar Side Zip Detail Quilted Jacket
+                                        </a>
+                                        <div class="prod-card__type">
+                                            Colmar
+                                        </div>
+                                        <div class="prod-card__size">
+                                            Sizes: 50, 51, 53
+                                        </div>
+                                        <div class="prod-card__colors colors-card">
+                                            <div class="colors-card__slider">
+                                                <div class="colors-card__wrapper swiper-wrapper">
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_black">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_gray">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_white">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_black-white">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_red">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_black">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_gray">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_white">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_black-white">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_red">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="colors-card__navigation navigation">
+                                                    <button type="button" class="navigation__prev">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#arrow2-str">
+                                                            </use>
+                                                        </svg>
+                                                    </button>
+                                                    <button type="button" class="navigation__next">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#arrow2-str">
+                                                            </use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="prod-card__prices prices-card">
+                                            <div class="prices-card__wrapper">
+                                                <div class="prices-card__new">$ 333.67</div>
+                                                <div class="prices-card__old">$ 412.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__item prod-card">
+                                    <div class="prod-card__labels">
+                                        <span class="prod-card__label">-20 %</span>
+                                        <button type="button" class="prod-card__favorite">
+                                            <svg>
+                                                <use href="img/icons/icons.svg#heart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a href="#" class="prod-card__image">
+                                        <picture>
+                                            <source data-srcset="img/products/image8.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/products/image8.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </a>
+                                    <div class="prod-card__details">
+                                        <a href="#" class="prod-card__name">
+                                            Colmar Side Zip Detail Quilted Jacket
+                                        </a>
+                                        <div class="prod-card__type">
+                                            Colmar
+                                        </div>
+                                        <div class="prod-card__size">
+                                            Sizes: 50, 51, 53
+                                        </div>
+                                        <div class="prod-card__prices prices-card">
+                                            <div class="prices-card__wrapper">
+                                                <div class="prices-card__new">$ 333.67</div>
+                                                <div class="prices-card__old">$ 412.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__item prod-card">
+                                    <div class="prod-card__labels">
+                                        <span class="prod-card__label">-20 %</span>
+                                        <button type="button" class="prod-card__favorite">
+                                            <svg>
+                                                <use href="img/icons/icons.svg#heart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a href="#" class="prod-card__image">
+                                        <picture>
+                                            <source data-srcset="img/products/image9.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/products/image9.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </a>
+                                    <div class="prod-card__details">
+                                        <a href="#" class="prod-card__name">
+                                            Colmar Side Zip Detail Quilted Jacket
+                                        </a>
+                                        <div class="prod-card__type">
+                                            Colmar
+                                        </div>
+                                        <div class="prod-card__colors colors-card">
+                                            <div class="colors-card__slider">
+                                                <div class="colors-card__wrapper swiper-wrapper">
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_black">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_gray">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_white">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_black-white">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_red">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_black">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_gray">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_white">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_black-white">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_red">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="colors-card__navigation navigation">
+                                                    <button type="button" class="navigation__prev">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#arrow2-str">
+                                                            </use>
+                                                        </svg>
+                                                    </button>
+                                                    <button type="button" class="navigation__next">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#arrow2-str">
+                                                            </use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="prod-card__prices prices-card">
+                                            <div class="prices-card__wrapper">
+                                                <div class="prices-card__new">$ 333.67</div>
+                                                <div class="prices-card__old">$ 412.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__item prod-card">
+                                    <div class="prod-card__labels">
+                                        <span class="prod-card__label">-20 %</span>
+                                        <button type="button" class="prod-card__favorite">
+                                            <svg>
+                                                <use href="img/icons/icons.svg#heart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a href="#" class="prod-card__image">
+                                        <picture>
+                                            <source data-srcset="img/products/image8.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/products/image8.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </a>
+                                    <div class="prod-card__details">
+                                        <a href="#" class="prod-card__name">
+                                            Colmar Side Zip Detail Quilted Jacket
+                                        </a>
+                                        <div class="prod-card__type">
+                                            Colmar
+                                        </div>
+                                        <div class="prod-card__size">
+                                            Sizes: 50, 51, 53
+                                        </div>
+                                        <div class="prod-card__prices prices-card">
+                                            <div class="prices-card__wrapper">
+                                                <div class="prices-card__new">$ 333.67</div>
+                                                <div class="prices-card__old">$ 412.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -275,7 +1027,7 @@
     </div>
 
     
-    <script src="js/app.min.js?_v=20230905130030"></script>
+    <script src="js/app.min.js?_v=20230905154658"></script>
 </body>
 
 </html>
