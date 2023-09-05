@@ -2525,30 +2525,18 @@ body._lock {
   margin-bottom: 40px;
 }
 
-.policy__section p {
-  font-size: 1.125rem;
-  line-height: 1.5;
-}
-
-.policy__section p:not(:last-of-type) {
-  margin-bottom: 20px;
-}
-
-.policy__section a {
-  color: #2673FF;
-  text-decoration: underline;
-}
-
-.policy__section a:hover {
-  text-decoration: none;
-}
-
 .policy__title {
   margin-bottom: 16px;
 }
 
 .policy__title.title1 {
   margin-bottom: 40px;
+}
+
+.policy__pre-list {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  margin-bottom: 8px;
 }
 
 .policy__list:not(:last-child) {
@@ -2572,6 +2560,28 @@ body._lock {
   border-radius: 50%;
   background: var(--black);
   overflow: hidden;
+}
+
+.policy__text {
+  font-size: 1.125rem;
+  line-height: 1.5;
+}
+
+.policy__text:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.policy__text p:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.policy__link {
+  color: #2673FF;
+  text-decoration: underline;
+}
+
+.policy__link:hover {
+  text-decoration: none;
 }
 
 .contact {
