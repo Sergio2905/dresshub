@@ -119,6 +119,12 @@ body._lock {
   padding: 0 15px;
 }
 
+.container2 {
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
 .title1 {
   font-size: 2.125rem;
   font-weight: 700;
@@ -2600,6 +2606,10 @@ body._lock {
   margin-bottom: 56px;
 }
 
+.article__section:last-of-type {
+  margin-bottom: 80px;
+}
+
 .article__title {
   font-size: 2.5rem;
   font-weight: 700;
@@ -3662,6 +3672,10 @@ body._lock {
 
   .article__section:not(:last-of-type) {
     margin-bottom: calc(24px + 32 * (100vw - 320px) / 1600);
+  }
+
+  .article__section:last-of-type {
+    margin-bottom: calc(40px + 40 * (100vw - 320px) / 1600);
   }
 
   .article__title {
