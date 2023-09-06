@@ -4,7 +4,7 @@
 <head>
     <title>Dresshub</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230906122925">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230906124847">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -14,7 +14,45 @@
         <header class="header">
     <div class="header__container container">
         <div class="header__body">
-
+            <a href="#" class="header__logo">
+                <picture>
+                    <source data-srcset="img/logo.svg" srcset="img/plug.png" type="image/webp">
+                    <img data-src="img/logo.svg" src="img/plug.png" alt="Image">
+                </picture>
+            </a>
+            <div class="header__search search">
+                <div class="search__body">
+                    <button type="button" class="search__btn">
+                        <svg>
+                            <use href="img/icons/icons.svg#search"></use>
+                        </svg>
+                    </button>
+                    <div class="search__input">
+                        <input type="text" placeholder="Search...">
+                    </div>
+                </div>
+            </div>
+            <div class="header__menu menu">
+                <nav class="menu__body">
+                    <ul class="menu__list">
+                        <li class="menu__item"><a href="#" class="menu__link">WOMEN</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Men</a></li>
+                        <li class="menu__item"><a href="#" class="menu__link">Brands</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__icons">
+                <button type="button" class="header__btn">
+                    <svg>
+                        <use href="img/icons/icons.svg#dollar"></use>
+                    </svg>
+                </button>
+                <button type="button" class="header__btn">
+                    <svg>
+                        <use href="img/icons/icons.svg#user"></use>
+                    </svg>
+                </button>
+            </div>
         </div>
     </div>
 </header>
@@ -245,7 +283,7 @@
     </div>
 
     
-    <script src="js/app.min.js?_v=20230906122925"></script>
+    <script src="js/app.min.js?_v=20230906124847"></script>
 </body>
 
 </html>
