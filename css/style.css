@@ -196,7 +196,7 @@ body._lock {
   background: #FFF;
   font-family: "Manrope", sans-serif;
   font-size: 0.75rem;
-  font-weight: 600;
+  font-weight: 500;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -208,6 +208,19 @@ body._lock {
   height: 16px;
   fill: var(--black);
   margin-left: 8px;
+}
+
+.btn-red {
+  border-radius: 5px;
+  background: linear-gradient(90deg, #F0412F 0%, rgba(241, 70, 52, 0.76) 100%);
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 10px;
+  color: var(--white);
 }
 
 .breadcrumbs {
@@ -616,6 +629,25 @@ body._lock {
   position: relative;
 }
 
+.prod-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.8);
+  display: none;
+}
+
+.prod-card.disable::after {
+  display: block;
+}
+
+.prod-card.disable .prod-card__image {
+  pointer-events: none;
+}
+
 .prod-card__labels {
   position: absolute;
   top: 12px;
@@ -656,6 +688,26 @@ body._lock {
 }
 
 .prod-card__favorite svg {
+  width: 16px;
+  height: 16px;
+  fill: var(--black);
+}
+
+.prod-card__delete {
+  width: 24px;
+  height: 24px;
+  border-radius: 3px;
+  border: 1px solid rgba(33, 33, 33, 0.1);
+  background: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.prod-card__delete svg {
   width: 16px;
   height: 16px;
   fill: var(--black);
@@ -722,6 +774,24 @@ body._lock {
 
 .prod-card__colors {
   margin-bottom: 15px;
+}
+
+.prod-card__out {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 5px;
+  border: 1px solid #C7CAD1;
+  background: #F3F4F6;
+  padding: 8px 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: var(--black);
+  text-align: center;
+  white-space: nowrap;
 }
 
 .prices-card__wrapper {
@@ -882,6 +952,36 @@ body._lock {
 
 .popular__link:hover {
   text-decoration: none;
+}
+
+.input {
+  border-radius: 5px;
+  border: 1px solid rgba(33, 33, 33, 0.5);
+  background: #FFF;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  margin-bottom: 24px;
+}
+
+.input input {
+  flex: 1 1 auto;
+  font-family: "Manrope", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  background: none;
+  border: none;
+  height: 100%;
+}
+
+.input input::-moz-placeholder {
+  opacity: 0.4;
+}
+
+.input input::placeholder {
+  opacity: 0.4;
 }
 
 .marquee__wrapper {
@@ -3105,7 +3205,6 @@ body._lock {
   background: var(--white);
 }
 
-.contact__form input,
 .contact__form textarea {
   border-radius: 5px;
   border: 1px solid rgba(33, 33, 33, 0.5);
@@ -3117,20 +3216,16 @@ body._lock {
   font-size: 1rem;
   margin-bottom: 24px;
   width: 100%;
-}
-
-.contact__form input::-moz-placeholder, .contact__form textarea::-moz-placeholder {
-  opacity: 0.4;
-}
-
-.contact__form input::placeholder,
-.contact__form textarea::placeholder {
-  opacity: 0.4;
-}
-
-.contact__form textarea {
   resize: none;
   min-height: 180px;
+}
+
+.contact__form textarea::-moz-placeholder {
+  opacity: 0.4;
+}
+
+.contact__form textarea::placeholder {
+  opacity: 0.4;
 }
 
 .contact__form-title {
@@ -3237,6 +3332,224 @@ body._lock {
 .error-page__link span {
   font-weight: 800;
   margin-left: 5px;
+}
+
+.account {
+  flex: 1 1 auto;
+}
+
+.account__body {
+  padding-bottom: 150px;
+}
+
+.account__tabs {
+  position: relative;
+}
+
+.account__tabs .tabs__header {
+  border-radius: 5px;
+  background: #FFF;
+  padding: 16px;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 16px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.account__tabs .tabs__item {
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 8px 16px;
+  text-align: center;
+  opacity: 0.7;
+  border-bottom: 1px solid rgba(33, 33, 33, 0.4);
+  transition: all 0.2s linear;
+  white-space: nowrap;
+}
+
+.account__tabs .tabs__item:hover {
+  color: #0024A1;
+  border-bottom: 2px solid #0024A1;
+}
+
+.account__tabs .tabs__item._active {
+  opacity: 1;
+  color: #0024A1;
+  border-bottom: 2px solid #0024A1;
+}
+
+.account__main-header {
+  border-radius: 5px;
+  background: #FFF;
+  padding: 16px;
+  margin-bottom: 16px;
+  display: none;
+}
+
+.account__header {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  background: #FFF;
+  padding: 16px;
+  margin-bottom: 16px;
+  margin-left: 260px;
+}
+
+.account__block {
+  border-radius: 5px;
+  background: #FFF;
+  padding: 16px;
+  position: relative;
+}
+
+.account__block:not(:last-child) {
+  margin-bottom: 16px;
+}
+
+.account__title {
+  margin-bottom: 24px;
+}
+
+.account__icon svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--black);
+  margin-right: 16px;
+}
+
+.account__main-title {
+  margin-right: 24px;
+}
+
+.account__btn {
+  font-family: "Manrope", sans-serif;
+  color: var(--red);
+  font-weight: 500;
+  border-radius: 5px;
+  border: 2px solid #CD8179;
+  background: linear-gradient(0deg, rgba(205, 129, 121, 0.02) 0%, rgba(205, 129, 121, 0.02) 100%), #FFF;
+  padding: 8px 16px;
+}
+
+.account__sort {
+  margin-right: 24px;
+}
+
+.account__btns {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.account__form {
+  max-width: 512px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.sort-account__radio {
+  border-radius: 5px;
+  border: 1px solid rgba(33, 33, 33, 0.1);
+  background: #FFF;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.sort-account__radio .radio-options__item {
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  opacity: 0.2;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+.sort-account__radio .radio-options__item input {
+  display: none;
+}
+
+.sort-account__radio .radio-options__item:not(:last-child) {
+  margin-right: 16px;
+}
+
+.sort-account__radio .radio-options__item._active {
+  opacity: 1;
+}
+
+.form-account__title {
+  margin-bottom: 40px;
+}
+
+.form-account__btn {
+  margin-bottom: 32px;
+  width: 100%;
+}
+
+.form-account__delete {
+  font-family: "Manrope", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  align-self: flex-start;
+  transition: all 0.2s linear;
+}
+
+.form-account__delete:hover {
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
+}
+
+.delete-account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: var(--white);
+  padding: 16px;
+  transition: all 0.3s linear;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0);
+}
+
+.delete-account.active {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.delete-account__title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.delete-account__del {
+  max-width: 512px;
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.delete-account__cancel {
+  max-width: 512px;
+  width: 100%;
+  font-size: 1rem;
 }
 
 .footer {
@@ -3564,6 +3877,11 @@ body._lock {
     font-size: calc(0.75rem + 2 * (100vw - 20rem) / 1600);
   }
 
+  .prod-card__out {
+    font-size: calc(0.75rem + 2 * (100vw - 20rem) / 1600);
+    padding: 8px calc(8px + 8 * (100vw - 320px) / 1600);
+  }
+
   .prices-card__reg {
     font-size: calc(0.75rem + 4 * (100vw - 20rem) / 1600);
   }
@@ -3574,6 +3892,10 @@ body._lock {
 
   .prices-card__old {
     font-size: calc(0.625rem + 2 * (100vw - 20rem) / 1600);
+  }
+
+  .input {
+    height: calc(50px + 10 * (100vw - 320px) / 1600);
   }
 
   .main__goods {
@@ -3917,6 +4239,7 @@ body._lock {
 
   .contact__form {
     padding: calc(16px + 24 * (100vw - 320px) / 1600);
+    margin-bottom: calc(12px + 12 * (100vw - 320px) / 1600);
   }
 
   .error-page__desc {
@@ -3925,6 +4248,34 @@ body._lock {
 
   .error-page__link {
     font-size: calc(0.75rem + 4 * (100vw - 20rem) / 1600);
+  }
+
+  .account__body {
+    padding-bottom: calc(50px + 100 * (100vw - 320px) / 1600);
+  }
+
+  .account__tabs .tabs__header {
+    margin-bottom: calc(8px + 8 * (100vw - 320px) / 1600);
+  }
+
+  .account__main-header {
+    margin-bottom: calc(8px + 8 * (100vw - 320px) / 1600);
+  }
+
+  .account__header {
+    margin-bottom: calc(8px + 8 * (100vw - 320px) / 1600);
+  }
+
+  .account__form {
+    padding: calc(20px + 20 * (100vw - 320px) / 1600) 0;
+  }
+
+  .form-account__title {
+    margin-bottom: calc(20px + 20 * (100vw - 320px) / 1600);
+  }
+
+  .form-account__btn {
+    margin-bottom: calc(16px + 16 * (100vw - 320px) / 1600);
   }
 
   .footer__rights {
@@ -4127,6 +4478,10 @@ body._lock {
     max-width: unset;
   }
 
+  .account__icon {
+    display: none;
+  }
+
   .menu-footer__list {
     justify-content: center;
     -moz-column-gap: 24px;
@@ -4242,6 +4597,40 @@ body._lock {
 
   .contact__desc {
     display: block;
+  }
+
+  .account__tabs .tabs__header {
+    position: static;
+    width: 100%;
+  }
+
+  .account__tabs .tabs__item {
+    flex: 1 1 auto;
+  }
+
+  .account__main-header {
+    display: flex;
+    align-items: center;
+  }
+
+  .account__header_profile {
+    display: none;
+  }
+
+  .account__header {
+    margin-left: 0;
+  }
+
+  .account__header {
+    justify-content: center;
+  }
+
+  .account__header .account__main-title {
+    display: none;
+  }
+
+  .account__header .account__btns {
+    display: none;
   }
 }
 
