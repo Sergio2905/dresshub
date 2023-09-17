@@ -4,7 +4,7 @@
 <head>
     <title>Dresshub</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230915155708">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230917150033">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -30,7 +30,35 @@
                     <div class="search__input">
                         <input type="text" placeholder="Search...">
                     </div>
+                    <div class="search__select select-box">
+                        <div class="options-container">
+                            <div class="option">
+                                <input type="radio" id="all" name="search" value="all">
+                                <label for="for all">All</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="women" name="search" value="women">
+                                <label for="for women">Women</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="men" name="search" value="men">
+                                <label for="for men">Men</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="brands" name="search" value="brands">
+                                <label for="for brands">Brands</label>
+                            </div>
+                        </div>
+                        <div class="selected">
+                            All
+                        </div>
+                    </div>
                 </div>
+                <button type="button" class="search__close">
+                    <svg>
+                        <use href="img/icons/icons.svg#close"></use>
+                    </svg>
+                </button>
             </div>
             <div class="header__menu menu">
                 <nav class="menu__body">
@@ -620,11 +648,43 @@
                 </nav>
             </div>
             <div class="header__icons">
-                <button type="button" class="header__btn">
-                    <svg>
-                        <use href="img/icons/icons.svg#dollar"></use>
-                    </svg>
-                </button>
+                <div class="header__currency currency">
+                    <div class="currency__body">
+                        <div class="currency__select select-box">
+                            <div class="options-container">
+                                <div class="option">
+                                    <input type="radio" id="dollar" name="currency" value="dollar">
+                                    <label for="for dollar">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#dollar"></use>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" id="euro" name="currency" value="euro">
+                                    <label for="for euro">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#dollar"></use>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" id="uah" name="currency" value="uah">
+                                    <label for="for uah">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#dollar"></use>
+                                        </svg>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="selected">
+                                <svg>
+                                    <use href="img/icons/icons.svg#dollar"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="header__user user-header">
                     <button type="button" class="user-header__icon">
                         <svg>
@@ -883,8 +943,43 @@
 </footer>
     </div>
 
-    
-    <script src="js/app.min.js?_v=20230915155708"></script>
+    <div class="popup" id="viewer">
+    <div class="popup__wrapper">
+        <div class="popup__content viewer">
+            <button type="button" class="viewer__close popup__close">
+                <svg>
+                    <use href="img/icons/icons.svg#close"></use>
+                </svg>
+            </button>
+            <div class="viewer__image"></div>
+        </div>
+    </div>
+</div>
+
+<div class="cookies">
+    <div class="cookies__body">
+        <div class="cookies__info">
+            <h3 class="cookies__title title3">Cookies!</h3>
+            <p class="cookies__desc">
+                This website stores cookies on your computer. We use this information to improve your browsing
+                experience and for analytics about our visitors both on this website and other media. To learn more
+                about the cookies used, see our
+                <a href="#" class="cookies__link">Privacy Policy</a>
+            </p>
+            <div class="cookies__btns">
+                <button type="button" class="cookies__btn btn-gradient">Accept All</button>
+                <button type="button" class="cookies__btn btn-white">Decline All</button>
+            </div>
+        </div>
+        <div class="cookies__image">
+            <picture>
+                <source data-srcset="img/cookie.gif" srcset="img/plug.png" type="image/webp">
+                <img data-src="img/cookie.gif" src="img/plug.png" alt="Image">
+            </picture>
+        </div>
+    </div>
+</div>
+    <script src="js/app.min.js?_v=20230917150033"></script>
 </body>
 
 </html>

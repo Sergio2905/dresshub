@@ -4,7 +4,7 @@
 <head>
     <title>Dresshub</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230915155708">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230917150033">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -30,7 +30,35 @@
                     <div class="search__input">
                         <input type="text" placeholder="Search...">
                     </div>
+                    <div class="search__select select-box">
+                        <div class="options-container">
+                            <div class="option">
+                                <input type="radio" id="all" name="search" value="all">
+                                <label for="for all">All</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="women" name="search" value="women">
+                                <label for="for women">Women</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="men" name="search" value="men">
+                                <label for="for men">Men</label>
+                            </div>
+                            <div class="option">
+                                <input type="radio" id="brands" name="search" value="brands">
+                                <label for="for brands">Brands</label>
+                            </div>
+                        </div>
+                        <div class="selected">
+                            All
+                        </div>
+                    </div>
                 </div>
+                <button type="button" class="search__close">
+                    <svg>
+                        <use href="img/icons/icons.svg#close"></use>
+                    </svg>
+                </button>
             </div>
             <div class="header__menu menu">
                 <nav class="menu__body">
@@ -620,11 +648,43 @@
                 </nav>
             </div>
             <div class="header__icons">
-                <button type="button" class="header__btn">
-                    <svg>
-                        <use href="img/icons/icons.svg#dollar"></use>
-                    </svg>
-                </button>
+                <div class="header__currency currency">
+                    <div class="currency__body">
+                        <div class="currency__select select-box">
+                            <div class="options-container">
+                                <div class="option">
+                                    <input type="radio" id="dollar" name="currency" value="dollar">
+                                    <label for="for dollar">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#dollar"></use>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" id="euro" name="currency" value="euro">
+                                    <label for="for euro">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#dollar"></use>
+                                        </svg>
+                                    </label>
+                                </div>
+                                <div class="option">
+                                    <input type="radio" id="uah" name="currency" value="uah">
+                                    <label for="for uah">
+                                        <svg>
+                                            <use href="img/icons/icons.svg#dollar"></use>
+                                        </svg>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="selected">
+                                <svg>
+                                    <use href="img/icons/icons.svg#dollar"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <div class="header__user user-header">
                     <button type="button" class="user-header__icon">
                         <svg>
@@ -736,7 +796,8 @@
                                                     <img data-src="img/products/image1.png" src="img/plug.png"
                                                         alt="Image">
                                                 </picture>
-                                                <button type="button" class="image-product__btn">
+                                                <button type="button" class="image-product__btn popup-link"
+                                                    data-modal="viewer">
                                                     <svg>
                                                         <use href="img/icons/icons.svg#resize"></use>
                                                     </svg>
@@ -751,7 +812,8 @@
                                                     <img data-src="img/products/image2.png" src="img/plug.png"
                                                         alt="Image">
                                                 </picture>
-                                                <button type="button" class="image-product__btn">
+                                                <button type="button" class="image-product__btn popup-link"
+                                                    data-modal="viewer">
                                                     <svg>
                                                         <use href="img/icons/icons.svg#resize"></use>
                                                     </svg>
@@ -766,7 +828,8 @@
                                                     <img data-src="img/products/image3.png" src="img/plug.png"
                                                         alt="Image">
                                                 </picture>
-                                                <button type="button" class="image-product__btn">
+                                                <button type="button" class="image-product__btn popup-link"
+                                                    data-modal="viewer">
                                                     <svg>
                                                         <use href="img/icons/icons.svg#resize"></use>
                                                     </svg>
@@ -781,7 +844,8 @@
                                                     <img data-src="img/products/image4.png" src="img/plug.png"
                                                         alt="Image">
                                                 </picture>
-                                                <button type="button" class="image-product__btn">
+                                                <button type="button" class="image-product__btn popup-link"
+                                                    data-modal="viewer">
                                                     <svg>
                                                         <use href="img/icons/icons.svg#resize"></use>
                                                     </svg>
@@ -853,6 +917,33 @@
                                                         <div class="colors-card__item colors-card__item_white">
                                                             <span></span>
                                                         </div>
+                                                    </div>
+                                                </div>
+                                                <div class="about-product__footer">
+                                                    <div class="about-product__btns">
+                                                        <button type="button"
+                                                            class="about-product__btn btn-green">Buy</button>
+                                                        <button type="button" class="about-product__btn btn-white">
+                                                            Get a Sale Alert
+                                                            <svg>
+                                                                <use href="img/icons/icons.svg#heart"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                    <div class="about-product__shop">italist.com</div>
+                                                    <div class="about-product__available">
+                                                        <div class="about-product__note">
+                                                            <svg>
+                                                                <use href="img/icons/icons.svg#attention"></use>
+                                                            </svg>
+                                                            This item is available in 10 shops
+                                                        </div>
+                                                        <button type="button" class="about-product__all btn-gradient">
+                                                            View all
+                                                            <svg>
+                                                                <use href="img/icons/icons.svg#arrow"></use>
+                                                            </svg>
+                                                        </button>
                                                     </div>
                                                 </div>
                                             </div>
@@ -965,30 +1056,141 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="about-product__footer">
-                                    <div class="about-product__btns">
-                                        <button type="button" class="about-product__btn btn-green">Buy</button>
-                                        <button type="button" class="about-product__btn btn-white">
-                                            Get a Sale Alert
-                                            <svg>
-                                                <use href="img/icons/icons.svg#heart"></use>
-                                            </svg>
-                                        </button>
-                                    </div>
-                                    <div class="about-product__shop">italist.com</div>
-                                    <div class="about-product__available">
-                                        <div class="about-product__note">
-                                            <svg>
-                                                <use href="img/icons/icons.svg#attention"></use>
-                                            </svg>
-                                            This item is available in 10 shops
+                                <div class="about-product__shops shops">
+                                    <div class="shops__body">
+                                        <div class="shops__header">
+                                            <div class="shops__title">All</div>
+                                            <button type="button" class="shops__close">
+                                                <svg>
+                                                    <use href="img/icons/icons.svg#close"></use>
+                                                </svg>
+                                            </button>
                                         </div>
-                                        <button type="button" class="about-product__all btn-gradient">
-                                            View all
-                                            <svg>
-                                                <use href="img/icons/icons.svg#arrow"></use>
-                                            </svg>
-                                        </button>
+                                        <ul class="shops__list" data-simplebar>
+                                            <li class="shops__item">
+                                                <div class="shops__card card-shops">
+                                                    <div class="card-shops__header">
+                                                        <a href="#" class="card-shops__title">italist.com</a>
+                                                        <div class="card-shops__prices prices-shops">
+                                                            <div class="prices-shops__reg">
+                                                                £1221.44
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-shops__sizes">
+                                                        Available sizes:
+                                                        <span>46</span>
+                                                        <span>48</span>
+                                                        <span>50</span>
+                                                        <span>52</span>
+                                                        <span>54</span>
+                                                        <span>56</span>
+                                                    </div>
+                                                    <div class="card-shops__colors">
+                                                        Available colors:
+                                                        <div
+                                                            class="card-shops__color colors-card__item colors-card__item_black">
+                                                            <span></span>
+                                                        </div>
+                                                        <div
+                                                            class="card-shops__color colors-card__item colors-card__item_red">
+                                                            <span></span>
+                                                        </div>
+                                                        <div
+                                                            class="card-shops__color colors-card__item colors-card__item_white">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="cards-shops__btn btn-green">
+                                                        Buy
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="shops__item">
+                                                <div class="shops__card card-shops">
+                                                    <div class="card-shops__header">
+                                                        <a href="#" class="card-shops__title">urbanchiccloset.com</a>
+                                                        <div class="card-shops__prices prices-shops">
+                                                            <div class="prices-shops__new">
+                                                                $ 333.67
+                                                            </div>
+                                                            <div class="prices-shops__old">
+                                                                $ 333.67
+                                                            </div>
+                                                            <div class="prices-shops__label">
+                                                                -30 %
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-shops__sizes">
+                                                        Available sizes:
+                                                        <span>46</span>
+                                                        <span>48</span>
+                                                        <span>50</span>
+                                                        <span>52</span>
+                                                        <span>54</span>
+                                                        <span>56</span>
+                                                    </div>
+                                                    <div class="card-shops__colors">
+                                                        Available colors:
+                                                        <div
+                                                            class="card-shops__color colors-card__item colors-card__item_black">
+                                                            <span></span>
+                                                        </div>
+                                                        <div
+                                                            class="card-shops__color colors-card__item colors-card__item_red">
+                                                            <span></span>
+                                                        </div>
+                                                        <div
+                                                            class="card-shops__color colors-card__item colors-card__item_white">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="cards-shops__btn btn-green">
+                                                        Buy
+                                                    </a>
+                                                </div>
+                                            </li>
+                                            <li class="shops__item">
+                                                <div class="shops__card card-shops">
+                                                    <div class="card-shops__header">
+                                                        <a href="#" class="card-shops__title">italist.com</a>
+                                                        <div class="card-shops__prices prices-shops">
+                                                            <div class="prices-shops__reg">
+                                                                £1221.44
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-shops__sizes">
+                                                        Available sizes:
+                                                        <span>46</span>
+                                                        <span>48</span>
+                                                        <span>50</span>
+                                                        <span>52</span>
+                                                        <span>54</span>
+                                                        <span>56</span>
+                                                    </div>
+                                                    <div class="card-shops__colors">
+                                                        Available colors:
+                                                        <div
+                                                            class="card-shops__color colors-card__item colors-card__item_black">
+                                                            <span></span>
+                                                        </div>
+                                                        <div
+                                                            class="card-shops__color colors-card__item colors-card__item_red">
+                                                            <span></span>
+                                                        </div>
+                                                        <div
+                                                            class="card-shops__color colors-card__item colors-card__item_white">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <a href="#" class="cards-shops__btn btn-green">
+                                                        Buy
+                                                    </a>
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
@@ -1188,6 +1390,143 @@
                                         </a>
                                         <div class="prod-card__type">
                                             Colmar
+                                        </div>
+                                        <div class="prod-card__colors colors-card">
+                                            <div class="colors-card__slider">
+                                                <div class="colors-card__wrapper swiper-wrapper">
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_black">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_gray">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_white">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_black-white">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_red">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_black">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_gray">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_white">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_black-white">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_red">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="colors-card__navigation navigation">
+                                                    <button type="button" class="navigation__prev">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#arrow2-str">
+                                                            </use>
+                                                        </svg>
+                                                    </button>
+                                                    <button type="button" class="navigation__next">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#arrow2-str">
+                                                            </use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="prod-card__prices prices-card">
+                                            <div class="prices-card__wrapper">
+                                                <div class="prices-card__new">$ 333.67</div>
+                                                <div class="prices-card__old">$ 412.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__item prod-card">
+                                    <div class="prod-card__labels">
+                                        <span class="prod-card__label">-20 %</span>
+                                        <button type="button" class="prod-card__favorite">
+                                            <svg>
+                                                <use href="img/icons/icons.svg#heart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a href="#" class="prod-card__image">
+                                        <picture>
+                                            <source data-srcset="img/products/image8.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/products/image8.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </a>
+                                    <div class="prod-card__details">
+                                        <a href="#" class="prod-card__name">
+                                            Colmar Side Zip Detail Quilted Jacket
+                                        </a>
+                                        <div class="prod-card__type">
+                                            Colmar
+                                        </div>
+                                        <div class="prod-card__size">
+                                            Sizes: 50, 51, 53
+                                        </div>
+                                        <div class="prod-card__prices prices-card">
+                                            <div class="prices-card__wrapper">
+                                                <div class="prices-card__new">$ 333.67</div>
+                                                <div class="prices-card__old">$ 412.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__item prod-card">
+                                    <div class="prod-card__labels">
+                                        <button type="button" class="prod-card__favorite">
+                                            <svg>
+                                                <use href="img/icons/icons.svg#heart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a href="#" class="prod-card__image">
+                                        <picture>
+                                            <source data-srcset="img/products/image9.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/products/image9.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </a>
+                                    <div class="prod-card__details">
+                                        <a href="#" class="prod-card__name">
+                                            Colmar Side Zip Detail Quilted Jacket
+                                        </a>
+                                        <div class="prod-card__type">
+                                            Colmar
+                                        </div>
+                                        <div class="prod-card__size">
+                                            Sizes: 50, 51, 53
                                         </div>
                                         <div class="prod-card__colors colors-card">
                                             <div class="colors-card__slider">
@@ -1611,6 +1950,140 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="catalog__item prod-card">
+                                    <div class="prod-card__labels">
+                                        <span class="prod-card__label">-20 %</span>
+                                        <button type="button" class="prod-card__favorite">
+                                            <svg>
+                                                <use href="img/icons/icons.svg#heart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a href="#" class="prod-card__image">
+                                        <picture>
+                                            <source data-srcset="img/products/image8.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/products/image8.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </a>
+                                    <div class="prod-card__details">
+                                        <a href="#" class="prod-card__name">
+                                            Colmar Side Zip Detail Quilted Jacket
+                                        </a>
+                                        <div class="prod-card__type">
+                                            Colmar
+                                        </div>
+                                        <div class="prod-card__prices prices-card">
+                                            <div class="prices-card__wrapper">
+                                                <div class="prices-card__new">$ 333.67</div>
+                                                <div class="prices-card__old">$ 412.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__item prod-card">
+                                    <div class="prod-card__labels">
+                                        <button type="button" class="prod-card__favorite">
+                                            <svg>
+                                                <use href="img/icons/icons.svg#heart"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <a href="#" class="prod-card__image">
+                                        <picture>
+                                            <source data-srcset="img/products/image9.webp" srcset="img/plug.png"
+                                                type="image/webp">
+                                            <img data-src="img/products/image9.png" src="img/plug.png" alt="Image">
+                                        </picture>
+                                    </a>
+                                    <div class="prod-card__details">
+                                        <a href="#" class="prod-card__name">
+                                            Colmar Side Zip Detail Quilted Jacket
+                                        </a>
+                                        <div class="prod-card__type">
+                                            Colmar
+                                        </div>
+                                        <div class="prod-card__size">
+                                            Sizes: 50, 51, 53
+                                        </div>
+                                        <div class="prod-card__colors colors-card">
+                                            <div class="colors-card__slider">
+                                                <div class="colors-card__wrapper swiper-wrapper">
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_black">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_gray">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_white">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_black-white">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_red">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_black">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_gray">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_white">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_black-white">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                    <div class="colors-card__slide swiper-slide">
+                                                        <div class="colors-card__item colors-card__item_red">
+                                                            <span></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="colors-card__navigation navigation">
+                                                    <button type="button" class="navigation__prev">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#arrow2-str">
+                                                            </use>
+                                                        </svg>
+                                                    </button>
+                                                    <button type="button" class="navigation__next">
+                                                        <svg>
+                                                            <use href="img/icons/icons.svg#arrow2-str">
+                                                            </use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="prod-card__prices prices-card">
+                                            <div class="prices-card__wrapper">
+                                                <div class="prices-card__new">$ 333.67</div>
+                                                <div class="prices-card__old">$ 412.00</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1665,8 +2138,43 @@
 </footer>
     </div>
 
-    
-    <script src="js/app.min.js?_v=20230915155708"></script>
+    <div class="popup" id="viewer">
+    <div class="popup__wrapper">
+        <div class="popup__content viewer">
+            <button type="button" class="viewer__close popup__close">
+                <svg>
+                    <use href="img/icons/icons.svg#close"></use>
+                </svg>
+            </button>
+            <div class="viewer__image"></div>
+        </div>
+    </div>
+</div>
+
+<div class="cookies">
+    <div class="cookies__body">
+        <div class="cookies__info">
+            <h3 class="cookies__title title3">Cookies!</h3>
+            <p class="cookies__desc">
+                This website stores cookies on your computer. We use this information to improve your browsing
+                experience and for analytics about our visitors both on this website and other media. To learn more
+                about the cookies used, see our
+                <a href="#" class="cookies__link">Privacy Policy</a>
+            </p>
+            <div class="cookies__btns">
+                <button type="button" class="cookies__btn btn-gradient">Accept All</button>
+                <button type="button" class="cookies__btn btn-white">Decline All</button>
+            </div>
+        </div>
+        <div class="cookies__image">
+            <picture>
+                <source data-srcset="img/cookie.gif" srcset="img/plug.png" type="image/webp">
+                <img data-src="img/cookie.gif" src="img/plug.png" alt="Image">
+            </picture>
+        </div>
+    </div>
+</div>
+    <script src="js/app.min.js?_v=20230917150033"></script>
 </body>
 
 </html>
