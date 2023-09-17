@@ -134,16 +134,19 @@ body._lock {
 .title2 {
   font-size: 1.75rem;
   font-weight: 600;
+  line-height: 1.4;
 }
 
 .title3 {
   font-size: 1.5rem;
   font-weight: 700;
+  line-height: 1.5;
 }
 
 .title4 {
   font-size: 1.25rem;
   font-weight: 700;
+  line-height: 1.7;
 }
 
 .btn-gradient {
@@ -266,7 +269,7 @@ body._lock {
 }
 
 .breadcrumbs {
-  margin-bottom: 16px;
+  margin: 16px 0;
 }
 
 .breadcrumbs__body {
@@ -782,7 +785,7 @@ body._lock {
 }
 
 .prod-card__name {
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   font-weight: 500;
   opacity: 0.7;
   margin-bottom: 4px;
@@ -797,14 +800,14 @@ body._lock {
 
 .prod-card__type {
   font-family: "Manrope", sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   font-weight: 800;
   margin-bottom: 8px;
 }
 
 .prod-card__size {
   margin-bottom: 15px;
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   font-weight: 500;
   opacity: 0.7;
 }
@@ -858,7 +861,7 @@ body._lock {
 
 .prices-card__old {
   font-weight: 600;
-  font-size: 0.75rem;
+  font-size: 0.8125rem;
   color: var(--black);
   opacity: 0.5;
   white-space: nowrap;
@@ -1933,7 +1936,6 @@ body._lock {
 }
 
 .header {
-  margin-bottom: 16px;
   background: var(--blue);
   position: relative;
   z-index: 100;
@@ -2518,6 +2520,8 @@ body._lock {
   margin-bottom: 70px;
   max-width: 645px;
   width: 100%;
+  margin-top: 60px;
+  padding-left: 60px;
 }
 
 .main__goods {
@@ -2665,6 +2669,7 @@ body._lock {
 .goods-main__nav {
   display: flex;
   align-items: center;
+  justify-content: center;
   position: relative;
   z-index: 2;
   padding: 10px 50px;
@@ -3219,7 +3224,7 @@ body._lock {
 
 .thumbs-product__slide {
   height: 300px;
-  padding: 5px;
+  padding: 2px;
 }
 
 .thumbs-product .swiper-slide-thumb-active .thumbs-product__item {
@@ -3423,6 +3428,8 @@ body._lock {
 .about-product__colors {
   display: flex;
   align-items: center;
+  color: var(--blue);
+  font-weight: 500;
 }
 
 .about-product__colors .colors-card__item:not(:last-child) {
@@ -3446,11 +3453,12 @@ body._lock {
 
 .about-product__btn {
   flex: 1 1 45%;
+  color: var(--black);
 }
 
 .about-product__shop {
   font-family: "Manrope", sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.875rem;
   font-weight: 600;
   opacity: 0.7;
   max-width: 50%;
@@ -3471,7 +3479,7 @@ body._lock {
   color: var(--blue);
   font-size: 0.875rem;
   font-weight: 500;
-  opacity: 0.7;
+  opacity: 0.8;
   display: flex;
   align-items: center;
   padding: 8px 12px;
@@ -3514,7 +3522,6 @@ body._lock {
   font-family: "Manrope", sans-serif;
   font-size: 0.875rem;
   font-weight: 500;
-  opacity: 0.7;
   line-height: 1.6;
 }
 
@@ -3987,7 +3994,7 @@ body._lock {
 .looks__desc {
   font-family: "Manrope", sans-serif;
   font-weight: 600;
-  line-height: 1.5;
+  line-height: 1.7;
 }
 
 .looks__desc p:not(:last-child) {
@@ -4048,7 +4055,7 @@ body._lock {
 .card-looks__desc {
   margin-bottom: 16px;
   flex: 1 1 auto;
-  line-height: 1.6;
+  line-height: 1.7;
   font-family: "Manrope", sans-serif;
   font-weight: 600;
 }
@@ -4206,6 +4213,7 @@ body._lock {
   font-family: "Manrope", sans-serif;
   font-weight: 600;
   margin-bottom: 48px;
+  line-height: 1.6;
 }
 
 .look__list {
@@ -4439,8 +4447,6 @@ body._lock {
 .card-blog__title {
   order: 2;
   margin-bottom: 16px;
-  font-size: 1.5rem;
-  font-weight: 700;
   color: var(--black);
 }
 
@@ -4609,6 +4615,7 @@ body._lock {
   padding-left: 16px;
   margin-bottom: 16px;
   font-size: 1.125rem;
+  line-height: 1.8;
 }
 
 .article__list {
@@ -4644,8 +4651,7 @@ body._lock {
 }
 
 .article__numeric-item {
-  font-size: 0.875rem;
-  opacity: 0.8;
+  font-size: 1.125rem;
   position: relative;
   padding-left: 20px;
 }
@@ -4667,7 +4673,7 @@ body._lock {
   position: relative;
   margin-left: 16px;
   padding-left: 40px;
-  line-height: 1.5;
+  line-height: 1.8;
   font-size: 1.125rem;
 }
 
@@ -4702,7 +4708,7 @@ body._lock {
   background: rgba(17, 34, 65, 0.05);
   font-weight: 700;
   font-family: "Manrope", sans-serif;
-  line-height: 1.5;
+  line-height: 1.8;
   font-size: 1.125rem;
 }
 
@@ -4735,9 +4741,8 @@ body._lock {
 
 .article__image figcaption {
   font-family: "Manrope", sans-serif;
-  font-size: 0.875rem;
+  font-size: 1.125rem;
   font-weight: 500;
-  opacity: 0.5;
 }
 
 .article__blog .header-blog__title {
@@ -5078,6 +5083,7 @@ body._lock {
   max-width: 560px;
   width: 100%;
   margin: 0 auto;
+  padding: 50px 0;
 }
 
 .error-page__image {
@@ -5100,6 +5106,7 @@ body._lock {
 .error-page__title {
   margin-bottom: 8px;
   text-align: center;
+  font-size: 1.625rem;
 }
 
 .error-page__desc {
@@ -5107,6 +5114,7 @@ body._lock {
   font-weight: 500;
   line-height: 1.6;
   margin-bottom: 16px;
+  font-size: 1.125rem;
   text-align: center;
 }
 
@@ -5784,7 +5792,7 @@ body._lock {
   }
 
   .title2 {
-    font-size: calc(1.375rem + 6 * (100vw - 20rem) / 1600);
+    font-size: calc(1.4375rem + 5 * (100vw - 20rem) / 1600);
   }
 
   .title3 {
@@ -5815,7 +5823,7 @@ body._lock {
   }
 
   .breadcrumbs__link {
-    font-size: calc(0.75rem + 4 * (100vw - 20rem) / 1600);
+    font-size: calc(0.8125rem + 3 * (100vw - 20rem) / 1600);
   }
 
   .breadcrumbs__link:not(:last-child)::after {
@@ -5841,15 +5849,15 @@ body._lock {
   }
 
   .prod-card__name {
-    font-size: calc(0.75rem + 2 * (100vw - 20rem) / 1600);
+    font-size: calc(0.8125rem + 2 * (100vw - 20rem) / 1600);
   }
 
   .prod-card__type {
-    font-size: calc(0.625rem + 2 * (100vw - 20rem) / 1600);
+    font-size: calc(0.6875rem + 2 * (100vw - 20rem) / 1600);
   }
 
   .prod-card__size {
-    font-size: calc(0.75rem + 2 * (100vw - 20rem) / 1600);
+    font-size: calc(0.8125rem + 2 * (100vw - 20rem) / 1600);
   }
 
   .prod-card__out {
@@ -5858,15 +5866,15 @@ body._lock {
   }
 
   .prices-card__reg {
-    font-size: calc(0.75rem + 4 * (100vw - 20rem) / 1600);
+    font-size: calc(0.8125rem + 3 * (100vw - 20rem) / 1600);
   }
 
   .prices-card__new {
-    font-size: calc(0.75rem + 4 * (100vw - 20rem) / 1600);
+    font-size: calc(0.8125rem + 3 * (100vw - 20rem) / 1600);
   }
 
   .prices-card__old {
-    font-size: calc(0.625rem + 2 * (100vw - 20rem) / 1600);
+    font-size: calc(0.6875rem + 2 * (100vw - 20rem) / 1600);
   }
 
   .input {
@@ -5985,7 +5993,7 @@ body._lock {
   }
 
   .about-product__sizes {
-    font-size: calc(0.75rem + 4 * (100vw - 20rem) / 1600);
+    font-size: calc(0.8125rem + 3 * (100vw - 20rem) / 1600);
     margin-bottom: calc(12px + 12 * (100vw - 320px) / 1600);
   }
 
@@ -5994,7 +6002,7 @@ body._lock {
   }
 
   .about-product__colors {
-    font-size: calc(0.75rem + 4 * (100vw - 20rem) / 1600);
+    font-size: calc(0.8125rem + 3 * (100vw - 20rem) / 1600);
   }
 
   .about-product__note {
@@ -6002,11 +6010,11 @@ body._lock {
   }
 
   .prices-product__new {
-    font-size: calc(1rem + 6 * (100vw - 20rem) / 1600);
+    font-size: calc(1.0625rem + 5 * (100vw - 20rem) / 1600);
   }
 
   .prices-product__old {
-    font-size: calc(0.875rem + 4 * (100vw - 20rem) / 1600);
+    font-size: calc(0.9375rem + 3 * (100vw - 20rem) / 1600);
   }
 
   .shops__title {
@@ -6066,7 +6074,7 @@ body._lock {
   }
 
   .looks__desc {
-    font-size: calc(0.75rem + 4 * (100vw - 20rem) / 1600);
+    font-size: calc(0.875rem + 2 * (100vw - 20rem) / 1600);
   }
 
   .looks__desc p:not(:last-child) {
@@ -6091,7 +6099,7 @@ body._lock {
   }
 
   .card-looks__desc {
-    font-size: calc(0.75rem + 4 * (100vw - 20rem) / 1600);
+    font-size: calc(0.875rem + 2 * (100vw - 20rem) / 1600);
   }
 
   .card-looks__link {
@@ -6137,7 +6145,7 @@ body._lock {
   }
 
   .look__desc {
-    font-size: calc(0.75rem + 4 * (100vw - 20rem) / 1600);
+    font-size: calc(0.875rem + 2 * (100vw - 20rem) / 1600);
     margin-bottom: calc(24px + 24 * (100vw - 320px) / 1600);
   }
 
@@ -6180,11 +6188,6 @@ body._lock {
     padding: calc(20px + 20 * (100vw - 320px) / 1600) calc(8px + 8 * (100vw - 320px) / 1600);
   }
 
-  .article__main-title {
-    font-size: calc(1.5rem + 16 * (100vw - 20rem) / 1600);
-    margin-bottom: calc(12px + 12 * (100vw - 320px) / 1600);
-  }
-
   .article__author {
     margin-bottom: calc(24px + 32 * (100vw - 320px) / 1600);
   }
@@ -6193,69 +6196,16 @@ body._lock {
     margin-bottom: calc(24px + 32 * (100vw - 320px) / 1600);
   }
 
-  .article__section:not(:last-of-type) {
-    margin-bottom: calc(24px + 32 * (100vw - 320px) / 1600);
-  }
-
-  .article__section:last-of-type {
-    margin-bottom: calc(40px + 40 * (100vw - 320px) / 1600);
-  }
-
   .article__title {
-    font-size: calc(1.625rem + 14 * (100vw - 20rem) / 1600);
-    margin-bottom: calc(24px + 32 * (100vw - 320px) / 1600);
+    font-size: 2.5rem;
   }
 
   .article__title3 {
-    margin-bottom: calc(20px + 20 * (100vw - 320px) / 1600);
+    font-size: 1.5rem;
   }
 
   .article__title4 {
-    margin-bottom: calc(8px + 8 * (100vw - 320px) / 1600);
-  }
-
-  .article__text {
-    font-size: calc(0.875rem + 4 * (100vw - 20rem) / 1600);
-    margin-bottom: calc(20px + 20 * (100vw - 320px) / 1600);
-  }
-
-  .article__list-title {
-    font-size: calc(0.875rem + 4 * (100vw - 20rem) / 1600);
-  }
-
-  .article__item {
-    font-size: calc(0.875rem + 4 * (100vw - 20rem) / 1600);
-    padding-left: calc(28px + 14 * (100vw - 320px) / 1600);
-  }
-
-  .article__item::before {
-    width: calc(20px + 14 * (100vw - 320px) / 1600);
-    height: calc(2px + 1 * (100vw - 320px) / 1600);
-    top: calc(8px + 2 * (100vw - 320px) / 1600);
-  }
-
-  .article__quote {
-    margin-left: calc(8px + 8 * (100vw - 320px) / 1600);
-    padding-left: calc(30px + 10 * (100vw - 320px) / 1600);
-    font-size: calc(0.875rem + 4 * (100vw - 20rem) / 1600);
-  }
-
-  .article__quote::before {
-    width: calc(20px + 4 * (100vw - 320px) / 1600);
-    height: calc(20px + 4 * (100vw - 320px) / 1600);
-  }
-
-  .article__quote::after {
-    left: calc(10px + 2 * (100vw - 320px) / 1600);
-  }
-
-  .article__note {
-    padding: calc(8px + 8 * (100vw - 320px) / 1600);
-    font-size: calc(0.875rem + 4 * (100vw - 20rem) / 1600);
-  }
-
-  .article__image figcaption {
-    font-size: calc(0.75rem + 2 * (100vw - 20rem) / 1600);
+    font-size: 1.25rem;
   }
 
   .menu-article {
@@ -6270,16 +6220,12 @@ body._lock {
     padding-left: calc(16px + 16 * (100vw - 320px) / 1600);
   }
 
-  .menu-article__link {
-    font-size: calc(0.75rem + 4 * (100vw - 20rem) / 1600);
-  }
-
   .contact__form {
     padding: calc(16px + 24 * (100vw - 320px) / 1600);
   }
 
-  .error-page__desc {
-    font-size: calc(0.75rem + 4 * (100vw - 20rem) / 1600);
+  .error-page__title {
+    font-size: 1.625rem;
   }
 
   .account__body {
@@ -6927,6 +6873,14 @@ body._lock {
 @media (max-width: 576px) {
   .catalog {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cookies__body {
+    padding: 24px;
+  }
+
+  .cookies__image {
+    display: none;
   }
 
   .header__menu-icon {
