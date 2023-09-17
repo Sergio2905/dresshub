@@ -1188,7 +1188,7 @@ body._lock {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: url("../../img/icons/icons.svg#radio");
+  background: url("../img/icons/icons.svg#radio");
   opacity: 0;
   visibility: hidden;
   transition: all 0.2s linear;
@@ -1242,7 +1242,7 @@ body._lock {
   transform: translate(0, -50%) scale(0);
   width: 20px;
   height: 20px;
-  background: url("../../img/icons/icons.svg#checkbox") 50% no-repeat;
+  background: url("../img/icons/icons.svg#checkbox") 50% no-repeat;
   transition: all 0.2s linear;
   opacity: 0;
   visibility: hidden;
@@ -1524,7 +1524,7 @@ body._lock {
   transform: translate(0, -50%);
   width: 16px;
   height: 16px;
-  background: url("../../img/icons/icons.svg#close") 50% no-repeat;
+  background: url("../img/icons/icons.svg#close") 50% no-repeat;
 }
 
 .filters__btn svg {
