@@ -1313,7 +1313,7 @@ body._lock {
 .filter__colors {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 12px;
+  gap: 8px;
 }
 
 .filter__color {
@@ -3832,9 +3832,9 @@ body._lock {
 .main-category__footer {
   padding-top: 8px;
   font-family: "Manrope", sans-serif;
-  font-size: 0.875rem;
-  font-weight: 500;
-  opacity: 0.6;
+  font-size: 0.75rem;
+  font-weight: 400;
+  opacity: 0.9;
   border-top: 1px solid rgba(33, 33, 33, 0.6);
   text-align: center;
 }
