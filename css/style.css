@@ -140,13 +140,11 @@ body._lock {
 .title3 {
   font-size: 1.5rem;
   font-weight: 700;
-  line-height: 1.5;
 }
 
 .title4 {
   font-size: 1.25rem;
   font-weight: 700;
-  line-height: 1.7;
 }
 
 .btn-gradient {
@@ -211,6 +209,7 @@ body._lock {
   height: 16px;
   fill: var(--black);
   margin-left: 8px;
+  transition: all 0.2s ease;
 }
 
 .btn-red {
@@ -733,10 +732,15 @@ body._lock {
   right: 0;
 }
 
+.prod-card__favorite.active svg {
+  fill: var(--red);
+}
+
 .prod-card__favorite svg {
   width: 16px;
   height: 16px;
   fill: var(--black);
+  transition: all 0.2s linear;
 }
 
 .prod-card__delete {
@@ -3463,7 +3467,14 @@ body._lock {
 
 .about-product__btn {
   flex: 1 1 45%;
-  color: var(--black);
+}
+
+.about-product__get {
+  flex: 1 1 45%;
+}
+
+.about-product__get.active svg {
+  fill: var(--red);
 }
 
 .about-product__shop {
@@ -3526,6 +3537,11 @@ body._lock {
   overflow-y: auto;
   max-height: 420px;
   padding-right: 15px;
+}
+
+.about-product__desc .simplebar-track.simplebar-vertical {
+  top: 10%;
+  bottom: 10%;
 }
 
 .about-product__text {
@@ -4148,6 +4164,7 @@ body._lock {
   transition: all 0.2s linear;
   flex: 1 1 12.5%;
   white-space: nowrap;
+  font-size: 0.875rem;
 }
 
 .goods-looks .tabs__item:hover {
@@ -4577,12 +4594,6 @@ body._lock {
   margin: 0 auto;
 }
 
-.article__main-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 24px;
-}
-
 .article__author {
   margin-bottom: 56px;
 }
@@ -4600,16 +4611,29 @@ body._lock {
 }
 
 .article__title {
-  font-size: 2.5rem;
+  font-size: 2.3125rem;
   font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.article__title2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.5;
   margin-bottom: 56px;
 }
 
 .article__title3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.7;
   margin-bottom: 40px;
 }
 
 .article__title4 {
+  font-size: 1.1875rem;
+  font-weight: 700;
+  line-height: 1.7;
   margin-bottom: 16px;
 }
 
@@ -5041,6 +5065,8 @@ body._lock {
 .contact__form-title {
   margin-bottom: 24px;
   width: 100%;
+  font-size: 1.875rem;
+  font-weight: 700;
 }
 
 .contact__desc {
@@ -5141,16 +5167,10 @@ body._lock {
 }
 
 .account__tabs .tabs__header {
-  border-radius: 5px 0 0 5px;
+  border-radius: 5px;
   background: #FFF;
   padding: 16px;
-  width: -moz-fit-content;
-  width: fit-content;
   margin-bottom: 16px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 1;
 }
 
 .account__tabs .tabs__item {
@@ -5187,11 +5207,12 @@ body._lock {
 .account__header {
   display: flex;
   align-items: center;
-  border-radius: 0 5px 5px 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  border-radius: 5px;
   background: #FFF;
-  padding: 16px;
-  margin-bottom: 16px;
-  margin-left: 244px;
+  margin-bottom: 24px;
 }
 
 .account__block {
@@ -5203,10 +5224,6 @@ body._lock {
 
 .account__block:not(:last-child) {
   margin-bottom: 16px;
-}
-
-.account__title {
-  margin-bottom: 24px;
 }
 
 .account__icon svg {
@@ -5228,10 +5245,6 @@ body._lock {
   border: 2px solid #CD8179;
   background: linear-gradient(0deg, rgba(205, 129, 121, 0.02) 0%, rgba(205, 129, 121, 0.02) 100%), #FFF;
   padding: 8px 16px;
-}
-
-.account__sort {
-  margin-right: 24px;
 }
 
 .account__btns {
@@ -5267,6 +5280,7 @@ body._lock {
   font-weight: 500;
   opacity: 0.4;
   transition: all 0.2s linear;
+  white-space: nowrap;
   cursor: pointer;
 }
 
@@ -6137,11 +6151,6 @@ body._lock {
     margin-bottom: calc(24px + 32 * (100vw - 320px) / 1600);
   }
 
-  .goods-looks .tabs__item {
-    font-size: calc(0.75rem + 4 * (100vw - 20rem) / 1600);
-    padding: 8px calc(8px + 8 * (100vw - 320px) / 1600);
-  }
-
   .look__body {
     padding-bottom: calc(50px + 100 * (100vw - 320px) / 1600);
   }
@@ -6207,15 +6216,7 @@ body._lock {
   }
 
   .article__title {
-    font-size: 2.5rem;
-  }
-
-  .article__title3 {
-    font-size: 1.5rem;
-  }
-
-  .article__title4 {
-    font-size: 1.25rem;
+    font-size: calc(1.75rem + 9 * (100vw - 20rem) / 1600);
   }
 
   .menu-article {
@@ -6234,6 +6235,10 @@ body._lock {
     padding: calc(16px + 24 * (100vw - 320px) / 1600);
   }
 
+  .contact__form-title {
+    font-size: calc(1.5rem + 6 * (100vw - 20rem) / 1600);
+  }
+
   .error-page__title {
     font-size: 1.625rem;
   }
@@ -6250,12 +6255,8 @@ body._lock {
     margin-bottom: calc(8px + 8 * (100vw - 320px) / 1600);
   }
 
-  .account__header {
-    margin-bottom: calc(8px + 8 * (100vw - 320px) / 1600);
-  }
-
   .account__title {
-    font-size: calc(1.25rem + 4 * (100vw - 20rem) / 1600);
+    font-size: calc(1rem + 3 * (100vw - 20rem) / 1600);
   }
 
   .account__form {
@@ -6834,12 +6835,6 @@ body._lock {
     display: block;
   }
 
-  .account__tabs .tabs__header {
-    position: static;
-    width: 100%;
-    border-radius: 5px;
-  }
-
   .account__tabs .tabs__item {
     flex: 1 1 auto;
   }
@@ -6847,30 +6842,6 @@ body._lock {
   .account__main-header {
     display: flex;
     align-items: center;
-  }
-
-  .account__header {
-    border-radius: 5px;
-  }
-
-  .account__header_profile {
-    display: none;
-  }
-
-  .account__header {
-    margin-left: 0;
-  }
-
-  .account__header {
-    justify-content: center;
-  }
-
-  .account__header .account__main-title {
-    display: none;
-  }
-
-  .account__header .account__btns {
-    display: none;
   }
 }
 

@@ -4,7 +4,7 @@
 <head>
     <title>Dresshub</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css?_v=20230918114226">
+    <link rel="stylesheet" href="css/style.min.css?_v=20230918215821">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -730,41 +730,38 @@
         <div class="account">
             <div class="account__container container2">
                 <div class="account__body">
-                    <div class="account__main-header">
+                    <div class="account__main-header" data-mob="btns, append">
                         <h1 class="account__main-title title1">Account</h1>
-                        <div class="account__btns">
-                            <button type="button" class="account__btn">Log out</button>
-                        </div>
                     </div>
                     <div class="account__tabs tabs">
-                        <div class="tabs__header">
+                        <div class="tabs__header" data-desk="btns, append">
                             <div class="tabs__item _active">Favorites</div>
                             <div class="tabs__item">Profile</div>
+                            <div class="account__btns" data-move="btns, 768">
+                                <button type="button" class="account__btn">Log out</button>
+                            </div>
                         </div>
 
                         <div class="tabs__body">
                             <div class="tabs__block _active">
                                 <div class="tabs__content">
-                                    <div class="account__header">
-                                        <div class="account__sort sort-account">
-                                            <div class="sort-account__radio radio-options">
-                                                <div class="radio-options__item _active">
-                                                    By category
-                                                    <input type="radio" name="sort" value="by-category" checked>
-                                                </div>
-                                                <div class="radio-options__separator"></div>
-                                                <div class="radio-options__item">
-                                                    By brand
-                                                    <input type="radio" name="sort" value="by-brand">
+                                    <div class="account__block">
+                                        <div class="account__header">
+                                            <h2 class="account__title title3">SCARVES</h2>
+                                            <div class="account__sort sort-account">
+                                                <div class="sort-account__radio radio-options">
+                                                    <div class="radio-options__item _active">
+                                                        By category
+                                                        <input type="radio" name="sort" value="by-category" checked>
+                                                    </div>
+                                                    <div class="radio-options__separator"></div>
+                                                    <div class="radio-options__item">
+                                                        By brand
+                                                        <input type="radio" name="sort" value="by-brand">
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="account__btns">
-                                            <button type="button" class="account__btn">Log out</button>
-                                        </div>
-                                    </div>
-                                    <div class="account__block">
-                                        <h2 class="account__title title3">SCARVES</h2>
                                         <div class="account__cat catalog">
                                             <div class="catalog__item prod-card">
                                                 <div class="prod-card__labels">
@@ -974,11 +971,6 @@
                             </div>
                             <div class="tabs__block">
                                 <div class="tabs__content">
-                                    <div class="account__header account__header_profile">
-                                        <div class="account__btns">
-                                            <button type="button" class="account__btn">Log out</button>
-                                        </div>
-                                    </div>
                                     <div class="account__block">
                                         <form action="#" class="account__form form-account">
                                             <div class="form-account__input input">
@@ -1091,13 +1083,13 @@
         </div>
         <div class="cookies__image">
             <picture>
-                <source data-srcset="img/cookie.gif" srcset="img/plug.png" type="image/webp">
-                <img data-src="img/cookie.gif" src="img/plug.png" alt="Image">
+                <source data-srcset="img/cookie_small.gif" srcset="img/plug.png" type="image/webp">
+                <img data-src="img/cookie_small.gif" src="img/plug.png" alt="Image">
             </picture>
         </div>
     </div>
 </div>
-    <script src="js/app.min.js?_v=20230918114226"></script>
+    <script src="js/app.min.js?_v=20230918215821"></script>
 </body>
 
 </html>
