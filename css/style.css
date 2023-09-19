@@ -2082,7 +2082,7 @@ body._lock {
   display: flex;
   align-items: center;
   padding: 16px 0;
-  min-height: 60px;
+  min-height: 80px;
 }
 
 .header__logo {
@@ -2358,12 +2358,16 @@ body._lock {
   opacity: 0;
   visibility: hidden;
   transform-origin: top center;
+  display: flex;
+  flex-direction: column;
 }
 
 .submenu.active {
-  height: var(--app-height);
+  max-height: calc(var(--app-height));
   opacity: 1;
   visibility: visible;
+  border-bottom: 1px solid rgba(17, 34, 65, 0.1);
+  box-shadow: 0 0 20px rgba(17, 34, 65, 0.5);
 }
 
 .submenu::before {
@@ -2387,7 +2391,7 @@ body._lock {
 }
 
 .submenu__body {
-  height: 100%;
+  flex: 1 1 auto;
   overflow-y: auto;
 }
 
@@ -7033,7 +7037,7 @@ body._lock {
     top: 100%;
     left: 0;
     width: 100%;
-    height: calc(var(--app-height) - 60px);
+    height: calc(var(--app-height) - 80px);
     background: var(--white);
     z-index: 200;
     transition: all 0.2s linear;
@@ -7064,6 +7068,12 @@ body._lock {
     transform: scale(1);
   }
 
+  .submenu.active {
+    max-height: calc(var(--app-height) - 80px);
+    border-bottom: none;
+    box-shadow: none;
+  }
+
   .submenu::before {
     display: none;
   }
@@ -7073,7 +7083,7 @@ body._lock {
   }
 
   .submenu__body {
-    padding-bottom: 10px;
+    padding-bottom: 80px;
   }
 
   .submenu__block {
