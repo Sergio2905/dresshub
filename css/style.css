@@ -6899,15 +6899,9 @@ body._lock {
   }
 }
 
-@media (max-width: 756px) {
-  .category__cat.grid4 {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
 @media (max-width: 576px) {
   .catalog {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .cookies__body {
@@ -7005,6 +6999,10 @@ body._lock {
     width: 156px;
   }
 
+  .category__cat.grid4 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .main-category__mode .mode__btn.grid4 {
     display: none;
   }
@@ -7042,6 +7040,10 @@ body._lock {
 
   .sidebar__alphabet .alphabet__letter_wide {
     grid-column: unset;
+  }
+
+  .catalog {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .pagination__link span {
