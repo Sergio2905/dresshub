@@ -1794,10 +1794,15 @@ body._lock {
   position: relative;
 }
 
+.viewer {
+  position: relative;
+}
+
 .viewer__close {
   position: fixed;
   top: 30px;
   right: 30px;
+  z-index: 100;
 }
 
 .viewer__close svg {
@@ -1811,6 +1816,7 @@ body._lock {
   align-items: center;
   justify-content: center;
   padding: 0 30px;
+  background: url("../img/loading.gif") 50% no-repeat;
 }
 
 .viewer__image.active img {
@@ -1823,6 +1829,46 @@ body._lock {
   max-width: 100%;
   cursor: zoom-in;
   transition: all 0.2s linear;
+}
+
+.viewer__slide {
+  width: 100% !important;
+}
+
+.viewer__navigation {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  top: 50%;
+  transform: translate(0, -50%);
+  z-index: 1;
+}
+
+.viewer__prev,
+.viewer__next {
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(135deg, #112241 0%, rgba(17, 34, 65, 0.76) 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 20px white;
+}
+
+.viewer__prev svg,
+.viewer__next svg {
+  width: 20px;
+  height: 20px;
+  stroke: var(--white);
+  stroke-width: 2px;
+}
+
+.viewer__prev svg {
+  transform: rotate(180deg);
 }
 
 .marquee__wrapper {
@@ -2636,7 +2682,7 @@ body._lock {
   width: 100%;
   height: 100%;
   background: rgba(17, 34, 65, 0.6);
-  transition: all 0.7s ease;
+  transition: all 0.7s ease 0.3s;
 }
 
 .goods-main__image img {
