@@ -3389,6 +3389,7 @@ body._lock {
   overflow: hidden;
   border-radius: 5px;
   border: 1px solid transparent;
+  background: url("../img/loading.gif") 50% no-repeat;
   transition: all 0.2s linear;
 }
 
