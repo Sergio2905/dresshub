@@ -7243,6 +7243,14 @@ body._lock {
     align-items: flex-start;
   }
 
+  .image-product__body {
+    min-height: 260px;
+  }
+
+  .thumbs-product__body {
+    min-height: 150px;
+  }
+
   .about-product__all svg {
     display: none;
   }

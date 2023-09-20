@@ -3094,6 +3094,14 @@ body._lock {
     transform: translate(50%, 50px);
   }
 
+  .image-product__body {
+    min-height: 260px;
+  }
+
+  .thumbs-product__body {
+    min-height: 150px;
+  }
+
   .about-product__all svg {
     display: none;
   }
