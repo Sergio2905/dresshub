@@ -2577,6 +2577,17 @@ body._lock {
      object-fit: contain;
 }
 
+.cookies__link {
+  font-family: "Manrope", sans-serif;
+  color: #3975EA;
+  font-weight: 500;
+  text-decoration: underline;
+}
+
+.cookies__link:hover {
+  text-decoration: none;
+}
+
 .footer {
   background: var(--blue);
 }
