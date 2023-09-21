@@ -4,7 +4,7 @@
 <head>
     <title>Dresshub</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/category.min.css?_v=20230921122953">
+    <link rel="stylesheet" href="css/category.min.css?_v=20230921124137">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -887,9 +887,9 @@
                                     <div class="filter__block">
                                         <div class="filter__price range">
                                             <input type="range" class="range__min" name="min" min="0" max="1000"
-                                                value="0">
+                                                value="0" aria-label="Min price">
                                             <input type="range" class="range__max" name="max" min="0" max="1000"
-                                                value="1000">
+                                                value="1000" aria-label="Max price">
                                             <div class="range__slider">
                                                 <div class="range__progress"></div>
                                                 <div class="range__thumb-left">
@@ -908,10 +908,12 @@
                                         </div>
                                         <div class="filter__inputs">
                                             <div class="filter__input input">
-                                                <input type="text" id="min-price" name="min" value="0">
+                                                <input type="text" id="min-price" name="min" value="0"
+                                                    aria-label="Min price">
                                             </div>
                                             <div class="filter__input input">
-                                                <input type="text" id="max-price" name="max" value="0">
+                                                <input type="text" id="max-price" name="max" value="0"
+                                                    aria-label="Max price">
                                             </div>
                                         </div>
                                     </div>
@@ -2500,7 +2502,7 @@
         </div>
     </div>
 </div>
-    <script src="js/category.min.js?_v=20230921122953" defer></script>
+    <script src="js/category.min.js?_v=20230921124137" defer></script>
 </body>
 
 </html>
