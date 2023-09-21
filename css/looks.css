@@ -1234,6 +1234,48 @@ body._lock {
   margin-bottom: 16px;
 }
 
+.tabs {
+  position: relative;
+}
+
+.tabs__header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none;
+  scrollbar-color: #000 #fff;
+}
+
+.tabs__header::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.tabs__item {
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.tabs__body {
+  position: relative;
+  transition: all 0.2s linear;
+}
+
+.tabs__block {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.2s linear;
+  width: 100%;
+}
+
+.tabs__block._active {
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+}
+
 .alphabet__popular {
   display: block;
   font-family: "Manrope", sans-serif;
