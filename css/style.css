@@ -5180,7 +5180,7 @@ body._lock {
 .contact__bg {
   flex: 1 1 60%;
   position: relative;
-  background: url("../img/loading.gif") center/contain no-repeat;
+  background: url("../img/loading.gif") 50% no-repeat;
 }
 
 .contact__bg img {
